@@ -3,9 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Kristin Lindberg</title>
+    <meta name="author" content="Kristin Lindberg">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Kristin Lindberg, Home Page">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
-    <h1>WDD 131 - Kristin Lindberg</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/25?lang=eng&id=p12#p12">Scripture</a></li>
+                <li><a href="final-project/">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Kristin Lindberg</h1>
+        <section class="card about">
+            <h2>About Me</h2>
+            <div class="me">
+                <p>My name is Kristin. I was born in Las Vegas, NV but grew up in Chandler, AZ and consider that home. I am currently studying the Software Development Program through BYU Pathway. I am married with two kids, and live in Utah. We also have a small French Bulldog mix. I enjoy playing all kinds of games and puzzles, and watching movies with my family.</p>
+                <img src="images/kristin-lindberg.jpg" alt="Kristin Lindberg Picture">
+            </div>
+            
+            <div class="state">
+                <h3>Chandler, Arizona</h3>
+                <img src="images/arizona.png" alt="Arizona State Flag">
+                <h4>State Flag of Arizona</h4>
+                <p>Arizona is a state in the Southwestern region of the United States. It is one of the states connected to the Four Corners region. Arizona was the 48th state and the last of the contiguous states to be added. It was added to the Union February 14, 1912. It is also the sixth-largest state by area.</p>
+            </div>
+
+        </section>
+        <section class="card resources">
+            <h2>Web Dev Resources</h2>
+            <nav>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development">MDN - Learn Web</a></li>
+                    <li><a href="https://github.com/iamismile/web-dev-resources">GitHub - Web Dev Resources</a></li>
+                    <li><a href="https://dev.to/westtan/100-must-have-web-development-resources-432j">DEV Community - 100+ Resources</a></li>
+                    <li><a href="https://prismic.io/guides/css-layout-techniques">Prismic - CSS Layout</a></li>
+                    <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">W3Schools - HTML Semantic</a></li>
+                    <li><a href="https://www.javascript.com/resources">JavaScript - Resources</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span> | Kristin Lindberg | Utah
+        </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
