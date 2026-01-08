@@ -55,7 +55,7 @@ img {
     margin: 8px;
 }
 
-header, footer {
+header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,18 +91,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.about nav ul {
-    display: flex;
-}
-
-.about nav ul li {
-    flex: 1 1 100%;
-}
-
-section nav ul {
-    flex-direction: column;
-}
-
 .card {
     display: grid;
     border: var(--border);
@@ -115,7 +103,6 @@ section nav ul {
 
 .card p {
     margin: 15px;
-    color: var(--font2-color);
 }
 
 .card h2 {
@@ -132,7 +119,6 @@ section nav ul {
 
 .card h3 {
     grid-column: 1 / 4;
-    display: inline-block;
     padding: 0 150px;
     border-bottom: 2px dotted var(--secondary-color);
     justify-self: center;
@@ -145,11 +131,8 @@ section nav ul {
     padding-bottom: 8px;
 }
 
-.me {
-    display: grid;
-}
-
 .card .me {
+    display: grid;
     grid-row: 2 / 3;
     grid-column: 1 / 4;
 }
@@ -158,11 +141,8 @@ section nav ul {
     grid-column: 3 / 4;
 }
 
-.state {
-    display: grid;
-}
-
 .card .state {
+    display: grid;
     grid-row: 3 / 4;
     grid-column: 1 / 4;
 }
@@ -176,13 +156,17 @@ section nav ul {
     grid-row: 2 / 3;
 }
 
-.card nav {
+.card .resource-links {
     grid-column: 1 / 4;
     grid-row: 2 / 4;
     margin-left: 70px;
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
     background-color: var(--primary-color);
     color: var(--font1-color);
     font-family: var(--heading-font);
