@@ -31,7 +31,7 @@ body {
 
 main {
     display: grid;
-    width: 960px;
+    width: 1000px;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto 1fr;
     justify-self: center;
@@ -142,7 +142,7 @@ section nav ul {
 .card h4 {
     text-align: center;
     font-weight: 350;
-    padding-bottom: 3px;
+    padding-bottom: 8px;
 }
 
 .me {
@@ -179,7 +179,7 @@ section nav ul {
 .card nav {
     grid-column: 1 / 4;
     grid-row: 2 / 4;
-    margin-left: 50px;
+    margin-left: 70px;
 }
 
 footer {
@@ -187,4 +187,8 @@ footer {
     color: var(--font1-color);
     font-family: var(--heading-font);
     padding: 15px;
+}
+
+.highlight {
+    color: #FDFF99;
 }
