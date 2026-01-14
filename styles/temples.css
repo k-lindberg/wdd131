@@ -1,0 +1,134 @@
+:root {
+    --primary-color: #9B1C7B;
+    --secondary-color: #FFF8F0;
+    --font-color: #1F2421;
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Work Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--font-color);
+    background-color: var(--secondary-color);
+}
+
+header, main, footer {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #1F2421;
+    display: grid;
+}
+
+header h1 {
+    color: var(--secondary-color);
+    padding: 20px;
+    font-family: var(--heading-font);
+}
+
+main h1 {
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--font-color);
+    padding-top: 15px;
+}
+
+nav {
+    max-width: 800px;
+    background-color: var(--primary-color);
+    margin: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.open {
+    display: block;
+    width: 100%;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    color: var(--secondary-color);
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+}
+
+.active {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+figure {
+    padding: 15px;
+    text-align: center;
+}
+
+figure img {
+    width: 250px;
+    height: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: center;
+    max-width: 875px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    padding: 15px;
+}
+
+.highlight {
+    color: #FDFF99;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#menu::before {
+    content: "☰";
+    color: var(--primary-color);
+    font-weight: bolder;
+    font-size: larger;
+}
+
+#menu.open::before {
+    content: "⨉";
+    color: var(--primary-color);
+    font-weight: bolder;
+    font-size: larger;
+}
