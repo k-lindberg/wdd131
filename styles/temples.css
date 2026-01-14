@@ -28,7 +28,7 @@ header {
     display: grid;
 }
 
-header h1 {
+header p {
     color: var(--secondary-color);
     padding: 20px;
     font-family: var(--heading-font);
@@ -42,6 +42,7 @@ main h1 {
 }
 
 nav {
+    display: flex;
     max-width: 800px;
     background-color: var(--primary-color);
     margin: 15px;
@@ -121,14 +122,14 @@ footer {
 
 #menu::before {
     content: "☰";
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-weight: bolder;
     font-size: larger;
 }
 
 #menu.open::before {
     content: "⨉";
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-weight: bolder;
     font-size: larger;
 }
