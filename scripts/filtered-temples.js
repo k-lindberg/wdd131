@@ -28,7 +28,7 @@ const temples = [
     },
     {
         templeName: "Orlando Florida",
-        location: "windermere, Florida, United States",
+        location: "Windermere, Florida, United States",
         dedicated: "1994, October, 9",
         area: 70000,
         imageUrl:
