@@ -7,20 +7,25 @@ font-family: Roboto, Arial, sans-serif;
 
 header, 
 footer {
-    background-color: royalblue;
+    background-color: #27408B;
     color: aliceblue;
     width: 100%;
     max-width: 400px;
     text-align: center;
     padding: 5px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
 }
 
 form {
-    margin: 20px 0;
+    margin: 20px auto;
     background-color: azure;
     width: 100%;
     max-width: 400px;
     padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 fieldset.radio {
@@ -48,8 +53,8 @@ fieldset.checkbox {
 }
 
 input[type="checkbox"] {
-    transform: scale(1.5);
-    margin: 5px;
+    transform: scale(2);
+    margin: 8px;
 }
 
 .checkbox p {
@@ -90,7 +95,7 @@ textarea {
 
 input[type="submit"] {
     border: none;
-    background-color: #999;
+    background-color: gray;
     color: aliceblue;
     border-radius: 6px;
     padding: .8rem;
@@ -100,4 +105,40 @@ input[type="submit"] {
     margin-top: 1rem;
     margin-bottom: -1rem;
     box-shadow: 1px 1px 4px #999;
+    font-size: x-large;
+}
+
+@media screen and (min-width: 640px) {
+
+    form {
+        margin: 2rem auto;
+        padding: 2rem;
+    }
+
+    fieldset.radio {
+        gap: 2rem;
+    }
+
+    .label-row {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    textarea {
+        max-width: 500px;
+        margin: 0 auto 1rem auto;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    input[type="submit"] {
+        max-width: 500px;
+        margin: 2rem auto 0 auto;
+        display: block;
+    }
 }

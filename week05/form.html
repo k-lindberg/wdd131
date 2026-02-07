@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review Form</title>
     <meta name="author" content="Kristin Lindberg">
-    <meta name="description" content="WDD131, Week 5, Product Review Form">
+    <meta name="description" content="WDD131 - Dynamic Web Fundamentals, Week 5, Product Review Form">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
 </head>
@@ -71,14 +71,16 @@
                 </label>
             </fieldset>
 
-            <label for="review" class="inline-label">Written Review
-            <p>(Optional)</p>
-            </label>
+            <div class="inline-label">
+                <label for="review" class="inline-label">Written Review</label>
+                <p>(Optional)</p>
+            </div>
             <textarea id="review" name="review"></textarea>
 
-            <label for="username" class="inline-label">Your Name
-            <p>(Optional)</p>
-            </label>
+            <div>
+                <label for="username" class="inline-label">Your Name</label>
+                <p>(Optional)</p>
+            </div>
             <input type="text" id="username" name="username">
 
             <input type="submit" value="Post Review">
