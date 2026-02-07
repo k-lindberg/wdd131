@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="author" content="Kristin Lindberg">
+    <meta name="description" content="WDD131, Week 5, Product Review Form">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Product Review</h1>
+        </header>
+
+        <form method="get" action="review.html">
+
+            <label for="product">Product Name *</label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option> 
+                </select>
+            
+            <fieldset class="radio">
+                <legend>Overall Rating *</legend>
+
+                <label for="rating1">
+                ☆   
+                    <input type="radio" id="rating1" name="rating" value="1" required>
+                </label>
+                <label for="rating2">
+                ☆☆
+                    <input type="radio" id="rating2" name="rating" value="2" required>
+                </label>
+                <label for="rating3">
+                ☆☆☆
+                    <input type="radio" id="rating3" name="rating" value="3" required>
+                </label>
+                <label for="rating4">
+                ☆☆☆☆
+                    <input type="radio" id="rating4" name="rating" value="4" required>
+                </label>
+                <label for="rating5">
+                ☆☆☆☆☆
+                    <input type="radio" id="rating5" name="rating" value="5" required>
+                </label>
+            </fieldset>
+
+            <label for="date">Date of Installation *</label>
+            <input type="date" id="date" name="date" required>
+
+            <fieldset class="checkbox">
+                <legend>Which features did you find useful in the product?</legend>
+                <p>(Check all that apply)</p>
+                <label for="durability">
+                    <input type="checkbox" id="durability" name="features" value="durability"> 
+                    Durability
+                </label>
+                <label for="ease">
+                    <input type="checkbox" id="ease" name="features" value="ease">
+                    Ease of Use
+                </label>
+                <label for="performance">
+                    <input type="checkbox" id="performance" name="features" value="performance">
+                    Performance 
+                </label>
+                <label for="design">
+                    <input type="checkbox" id="design" name="features" value="design">
+                    Design
+                </label>
+            </fieldset>
+
+            <label for="review" class="inline-label">Written Review
+            <p>(Optional)</p>
+            </label>
+            <textarea id="review" name="review"></textarea>
+
+            <label for="username" class="inline-label">Your Name
+            <p>(Optional)</p>
+            </label>
+            <input type="text" id="username" name="username">
+
+            <input type="submit" value="Post Review">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span> | Kristin Lindberg | Utah
+        </p>
+        <p>Last Modification: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
