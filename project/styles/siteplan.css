@@ -1,16 +1,16 @@
 :root {
---heading-font: "Kaushan Script", cursive;
---body-font: "Lato", sans-serif;
---background-color: #F5F5F5;
---primary-color: #40B5B5;
---secondary-color: #FF9B70;
---font-color: #1A1A1E;
+    --heading-font: "Kaushan Script", cursive;
+    --body-font: "Lato", sans-serif;
+    --background-color: #F5F5F5;
+    --primary-color: #40B5B5;
+    --secondary-color: #FF9B70;
+    --font-color: #1A1A1E;
 }
 
 * {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {

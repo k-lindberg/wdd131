@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel to Oʻahu, Hawaii</title>
+    <meta name="author" content="Kristin Lindberg">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Kristin Lindberg, Final Project">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/final-project.css">
+    <link rel="stylesheet" href="styles/final-project-large.css">
+    <script src="scripts/final-project.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/hibiscus.png" alt="Hibiscus Line Art" loading="lazy" width="75" height="75">
+        <button id="menu" aria-label="Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="beaches.html" class="active" id="beaches">Beaches</a></li>
+                <li><a href="activities.html" id="activities">Activites</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Travel Oʻahu</h1>
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <img src="images/hero-small.webp" alt="Hawaii" width="1500" height="750">
+            </picture>
+        </section>
+
+        <section class="beaches">
+            <h2>Beaches of Oʻahu</h2>
+
+            <h3>North Shore Beaches</h3>
+            <article class="beach">
+                <p>
+                    <strong>Sunset Beach</strong> spans from ʻEhukai Beach (Banzai Pipeline) to Sunset Point, encompassing a dozen different reef breaks. This two-mile stretch of sand is considered one of the longest rideable surf spots in the world, and it’s also a venue for the Vans Triple Crown of Surfing (November-December).
+                </p>
+            </article>
+            <article class="beach">
+                <p>
+                    <strong>Kawela Bay/Turtle Bay</strong> is located on Oʻahu’s northeastern tip, past Haleʻiwa and near Kahuku. It’s protected from large waves and surf, making it a great place to snorkel. You might even catch a glimpse of a honu(Hawaiian green sea turtle).
+                </p>
+            </article>
+
+            <h3>Windward Coast Beaches (Eastside)</h3>
+            <article class="beach">
+                <p>
+                    <strong>Kuaola Regional Park</strong> is across from Kuaola Ranch. This beautiful beach park offers spectacular views down the east coast of Oʻahu as well as Mokoliʻi, an islet off the Windward Coast.
+                </p>
+            </article>
+            <article class="beach">
+                <p>
+                    <strong>Makapuʻu Beach Park</strong> is sea cliffs and is very popular with bodyboarders and bodysurfers alike. Around the corner is the Makapuʻu Lighthouse.
+                </p>
+            </article>
+
+            <h3>South Shore Beaches</h3>
+            <article class="beach">
+                <p>
+                    <strong>Waikīkī Beach</strong> is one of the most popular beaches in the world, boasting more than four million visitors every year and breathtaking views of Lēʻahi (Diamond Head). The Duke Kahanamoku statue welcomes you to Waikīkī, one of the best places in Hawaiʻi to learn how to surf or paddle a canoe thanks to its small but long-lasting wave break. Waikīkī is actually made up of a few beaches, including Fort DeRussy Beach to the west, Waikīkī Beach (fronting the Royal Hawaiian Hotel and Westin Moana Surfrider), Kūhiō Beach (along Kalākaua Avenue) and Queen Surf Beach, home to quieter stretches on the Lēʻahi Head side of Waikīkī.
+                </p>
+            </article>
+            <article class="beach">
+                <p>
+                    <strong>Magic Island Lagoon</strong> extends out from Ala Moana Regional Park beach, a manmade peninsula with large seawalls and a shallow lagoon, making it a perfect place for keiki (children) to swim.
+                </p>
+            </article>
+
+            <h3>Leeward Coast Beaches (Westside)</h3>
+            <article class="beach">
+                <p>
+                    <strong>Mākaha Beach</strong> has the best surfing on Oʻahu’s west coast and is one of the places where big wave surfing was pioneered. Beware of the sloping sand beachhead that can cause backwash and catch unsuspecting visitors off-guard.
+                </p>
+            </article>
+            <article class="beach">
+                <p>
+                    <strong>Kō Olina Resort and Marina</strong> is where you’ll find man-made lagoons created for the Kō Olina Resort, home to the J.W. Marriott Ihilani Resort & Spa and the Aulani, A Disney Resort & Spa. With parking, restrooms and showers available, this is a perfect beach for families.
+                </p>
+            </article>
+        </section>
+
+        <form>
+            <div>
+                <label for="username" class="inline-label" required>Name *</label>
+            </div>
+            <input type="text" id="username" name="username">
+
+            <label for="beach">Beach Name *</label>
+            <select id="beach" name="beach" required>
+                <option value="" disabled selected>Select a Beach ...</option>
+                <option value="Kawela">Kawela Bay/Turtle Bay</option>
+                <option value="Kō Olina">Kō Olina Resort and Marina</option>
+                <option value="Kuaola">Kuaola Regional Park</option>
+                <option value="Magic Island">Magic Island Lagoon</option>
+                <option value="Mākaha">Mākaha Beach</option>
+                <option value="Makapuʻu">Makapuʻu Beach Park</option>
+                <option value="Sunset">Sunset Beach</option>
+                <option value="Waikīkī">Waikīkī Beach</option>
+            </select>
+            
+            <fieldset class="radio">
+                <legend>Rating *</legend>
+            
+                <label for="rating1">
+                    <input type="radio" id="rating1" name="rating" value="1" required>
+                    ☆
+                </label>
+                <label for="rating2">
+                    <input type="radio" id="rating2" name="rating" value="2" required>
+                    ☆☆
+                </label>
+                <label for="rating3">
+                    <input type="radio" id="rating3" name="rating" value="3" required>
+                    ☆☆☆
+                </label>
+                <label for="rating4">
+                    <input type="radio" id="rating4" name="rating" value="4" required>
+                    ☆☆☆☆
+                </label>
+                <label for="rating5">
+                    <input type="radio" id="rating5" name="rating" value="5" required>
+                    ☆☆☆☆☆
+                </label>
+            </fieldset>
+
+            <div class="inline-label">
+                <label for="comments" class="inline-label">Additional Comments</label>
+                <p>(Optional)</p>
+            </div>
+            <textarea id="review" name="review"></textarea>
+
+            <input type="submit" value="Post Review">
+
+        </form>
+
+    </main>
+    <footer>
+        <p>
+            &copy;<span id="currentyear"></span> | Kristin Lindberg | Utah
+        </p>
+        <p class="highlight">Last Modification: <span id="lastmodified"></span></p>
+        <p><a href="references.html">References</a></p>
+    </footer>
+</body>
+
+</html>
